@@ -1,7 +1,9 @@
-import Home from '../../screens/Home'
+
+import Screen from "../../screens/Screen"
 
 export default function HomeScreen() {
   return (
-    <Home />
+
+      <Screen />
   );
 }

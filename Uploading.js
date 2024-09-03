@@ -3,12 +3,11 @@ import {
   Text,
   StyleSheet,
   View,
-  Button,
   TouchableOpacity,
 } from "react-native";
 
 import { BlurView, VibrancyView } from "@react-native-community/blur";
-import { ProgressBar } from "./ProgressBar";
+import  ProgressBar from "./ProgressBar";
 import { Video } from "expo-av";
 
 export function Uploading({ image, video, progress }) {
@@ -66,6 +65,7 @@ export function Uploading({ image, video, progress }) {
           />
         )}
         <Text style={{ fontSize: 12 }}>Uploading...</Text>
+        <ProgressBar progress={progress} />
         <View style={{ height: 1, borderWidth: StyleSheet.hairlineWidth, width: "100%", borderColor: "#00000020"}} />
         <TouchableOpacity>
           <Text style={{ fontWeight: "500", color: "#347856", fontSize: 17 }}>
